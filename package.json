@@ -1,0 +1,27 @@
+{
+  "name": "deviscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bot.js",
+  "scripts": {
+    "bot": "node src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonatanjunio/deviscord.git"
+  },
+  "keywords": [],
+  "author": "Jhonatan Junio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonatanjunio/deviscord.git/issues"
+  },
+  "homepage": "https://github.com/jhonatanjunio/deviscord.git#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "moment-timezone": "^0.5.37",
+    "node-cron": "^3.0.2",
+    "node-fetch": "2"
+  }
+}

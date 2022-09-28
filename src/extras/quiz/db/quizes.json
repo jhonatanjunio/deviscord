@@ -1,0 +1,343 @@
+[
+  {
+    "id": 981,
+    "question": "**Como escrever uma instruÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o IF em JavaScript?**\nPergunta em inglÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªs: \"How to write an IF statement in JavaScript?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "if i = 5 then",
+      "answer_b": "if i = 5",
+      "answer_c": "if i == 5 then",
+      "answer_d": "if (i == 5)",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "d",
+        "answer": "if (i == 5)"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Easy",
+    "points": 10,
+    "asked_at": "2022-09-12 11:17:25",
+    "is_valid": false
+  },
+  {
+    "id": 594,
+    "question": "**O que significa $_FILES?**\nPergunta em inglÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªs: \"What does $_FILES mean?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "$_FILES is an associative array composed of items sent to the current script via the HTTP POST method.",
+      "answer_b": "$_FILES is an associative array composed of items sent to the current script via the HTTP GET method.",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "a",
+        "answer": "$_FILES is an associative array composed of items sent to the current script via the HTTP POST method."
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-12 11:17:25",
+    "is_valid": false
+  },
+  {
+    "id": 465,
+    "question": "**Qual das seguintes codificaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o um analisador XML assume?**\nPergunta em inglÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªs: \"Which of the following encoding an XML parser assumes ?\"",
+    "multiple_correct_answers": "true",
+    "alternatives": {
+      "answer_a": "UTF-16",
+      "answer_b": "UTF-32",
+      "answer_c": "UTF-8",
+      "answer_d": "UTF-64",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "b",
+        "answer": "UTF-32"
+      },
+      {
+        "alternative": "c",
+        "answer": "UTF-8"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-12 11:17:25",
+    "is_valid": false
+  },
+  {
+    "id": 552,
+    "question": "**Qual funÃƒÂ§ÃƒÂ£o ÃƒÂ© usada para obter o valor ASCII de um caractere em PHP?**\nPergunta em inglÃƒÂªs: \"Which function is used to get the ASCII value of a character in PHP ?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "asc()",
+      "answer_b": "ascii()",
+      "answer_c": "chr( )",
+      "answer_d": "val( )",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "c",
+        "answer": "chr( )"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-13 16:00:04",
+    "is_valid": false
+  },
+  {
+    "id": 781,
+    "question": "**Quando a instruÃƒÂ§ÃƒÂ£o switch ÃƒÂ© usada:**\nPergunta em inglÃƒÂªs: \"When is the switch statement used:\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "The switch statement is used to avoid long blocks of if..elseif..else code",
+      "answer_b": "The switch statement is used to avoid long blocks of loops like do...while code.",
+      "answer_c": "The switch statement is used when statements like if..elseif..else do not work.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "a",
+        "answer": "The switch statement is used to avoid long blocks of if..elseif..else code"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-13 16:00:04",
+    "is_valid": false
+  },
+  {
+    "id": 506,
+    "question": "**Quais dos seguintes sÃƒÂ£o comumente encontrados em pÃƒÂ¡ginas da web?**\nPergunta em inglÃƒÂªs: \"Which of the following are commonly found in web pages?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "internet",
+      "answer_b": "hyperlinks",
+      "answer_c": "intranet",
+      "answer_d": "all of the above",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "b",
+        "answer": "hyperlinks"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "HTML"
+      }
+    ],
+    "difficulty": "Easy",
+    "points": 10,
+    "asked_at": "2022-09-13 16:00:04",
+    "is_valid": false
+  },
+  {
+    "id": 575,
+    "question": "**O que serÃ¡ impresso se executarmos o seguinte cÃ³digo?\n<?php $var = 'falso';\nif ($var) { echo 'true';\n} else { echo 'falso';\n}**\nPergunta em inglÃªs: \"What will be printed if we run the following code? <?php $var = 'false';  if ($var) { echo 'true'; } else { echo 'false'; }\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "a",
+        "answer": "True"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-14 08:04:02",
+    "is_valid": false
+  },
+  {
+    "id": 568,
+    "question": "**Qual das seguintes funÃ§Ãµes retorna um texto em maiÃºsculas e minÃºsculas de uma variÃ¡vel?**\nPergunta em inglÃªs: \"Which of the following function returns a text in title case from a variable?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "ucwords($var)",
+      "answer_b": ".ucword($var)",
+      "answer_c": "toupper($var)",
+      "answer_d": ".upper($var)",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "a",
+        "answer": "ucwords($var)"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-14 08:04:02",
+    "is_valid": false
+  },
+  {
+    "id": 486,
+    "question": "**Qual das opÃ§Ãµes a seguir Ã© uma declaraÃ§Ã£o para um documento HTML?**\nPergunta em inglÃªs: \"Which of the following is a declaration for an HTML document?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "<html>.....</html>",
+      "answer_b": "<p>.....</p>",
+      "answer_c": "<!DOCTYPE Html>",
+      "answer_d": "<body>.....</body>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "c",
+        "answer": "<!DOCTYPE Html>"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "HTML"
+      }
+    ],
+    "difficulty": "Hard",
+    "points": 50,
+    "asked_at": "2022-09-14 08:04:02",
+    "is_valid": false
+  },
+  {
+    "id": 468,
+    "question": "**Todos os elementos são identificados por seus __________ e são marcados usando tags iniciais e finais ou tags de fechamento automático**\nPergunta em inglês: \"All elements are identified by their __________ and are marked up using either start tags and end tags or self-closing tags\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "Attribute Names",
+      "answer_b": "Tag Names",
+      "answer_c": "Class Names",
+      "answer_d": "None of the mentioned",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "b",
+        "answer": "Tag Names"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "HTML"
+      }
+    ],
+    "difficulty": "Easy",
+    "points": 10,
+    "asked_at": "2022-09-16 11:57:46",
+    "is_valid": true
+  },
+  {
+    "id": 774,
+    "question": "**Qual das seguintes opções está correta sobre NULL?**\nPergunta em inglês: \"Which of the following is correct about NULL?\"",
+    "multiple_correct_answers": "true",
+    "alternatives": {
+      "answer_a": "NULL is a special type that only has one value: NULL.",
+      "answer_b": "The special constant NULL is capitalized by convention, but actually it is case insensitive.",
+      "answer_c": "NULL is a special type that only has two values : NULL and NOT NULL",
+      "answer_d": "The special constant NULL is capitalized by convention and it should be defined as such as it's case sensitive. Meaning null is different than NULL",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "a",
+        "answer": "NULL is a special type that only has one value: NULL."
+      },
+      {
+        "alternative": "b",
+        "answer": "The special constant NULL is capitalized by convention, but actually it is case insensitive."
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-16 11:57:47",
+    "is_valid": true
+  },
+  {
+    "id": 553,
+    "question": "**______ é usado para destruir uma variável em PHP?**\nPergunta em inglês: \"______ is used to destroy a variable in PHP ?\"",
+    "multiple_correct_answers": "false",
+    "alternatives": {
+      "answer_a": "delete()",
+      "answer_b": "destroy()",
+      "answer_c": "unlink()",
+      "answer_d": "unset()",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "correct_answer": [
+      {
+        "alternative": "d",
+        "answer": "unset()"
+      }
+    ],
+    "category": "Code",
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "difficulty": "Medium",
+    "points": 30,
+    "asked_at": "2022-09-16 11:57:47",
+    "is_valid": true
+  }
+]
