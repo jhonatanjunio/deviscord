@@ -1,19 +1,26 @@
-var moment = require('moment-timezone');
+const moment = require('moment-timezone');
 const fs = require('fs').promises;
 const translator = require('./translator');
-var cron = require('node-cron');
+const cron = require('node-cron');
 const { pointsByDifficulty, getQuizQuestions } = require('../../helpers/quizhelper');
 const question = require('./question');
 const ranking = require('./ranking');
+require("dotenv").config();
 
 async function makeQuiz(client, dirName) {
-    var base_path = dirName
+    const base_path = dirName
     console.log("🧠 Quiz loaded successfully");
-    cron.schedule('0 8 * * Monday-Friday', async () => {
+    const quizScheduledTime = process.env.QUIZ_DEFAULT_SCHEDULE;
+    const rankingScheduledTime = process.env.QUIZ_DEFAULT_SCHEDULE;
+    const scheduleTimezone = process.env.QUIZ_DEFAULT_TIMEZONE;
+    const quizQty = process.env.QUIZ_DEFAULT_QUESTIONS_QTY;
+    const quizSubject = process.env.QUIZ_DEFAULT_CATEGORY;
+
+    cron.schedule(quizScheduledTime, async () => {
 
         let txtChannel = client.channels.cache.get(process.env.DISCORD_CHANNEL_QUIZ);
         await txtChannel.send({ content: `⏰ São 8 da manhã! Hora do Quiz! Preparados? BORA!` });
-        let quiz = await getQuizQuestions(3, "Code");
+        let quiz = await getQuizQuestions(quizQty, quizSubject);
         let quizes = fs.readFile(`${base_path}/extras/quiz/db/quizes.json`, 'utf8');
         quizes = JSON.parse(await quizes);
 
@@ -35,6 +42,8 @@ async function makeQuiz(client, dirName) {
             let alternatives = Object.values(quiz[qz].answers).filter(function (el) { return el != null });
             while (alternatives.length > 5) {
 
+                //Discord limitation for the action buttons is 5 buttons per embed message. When the question
+                // have more than 5 possible answers, we get a new quiz.
                 console.log("Mais de 5 alternativas, buscando outra pergunta");
                 const newQuiz = await getQuizQuestions(1, "Code");
 
@@ -76,7 +85,7 @@ async function makeQuiz(client, dirName) {
                 "tags": quiz[qz].tags,
                 "difficulty": quiz[qz].difficulty,
                 "points": pointsByDifficulty(quiz[qz].difficulty),
-                "asked_at": moment().tz("America/Sao_Paulo").format("YYYY-MM-DD HH:mm:ss"),
+                "asked_at": moment().tz(scheduleTimezone).format("YYYY-MM-DD HH:mm:ss"),
                 "is_valid": true
             }
 
@@ -104,14 +113,14 @@ async function makeQuiz(client, dirName) {
 
     }, {
         scheduled: true,
-        timezone: "America/Sao_Paulo"
+        timezone: scheduleTimezone
     });
 
-    cron.schedule('0 11 * * Friday', async() => {
+    cron.schedule(rankingScheduledTime, async() => {
         await ranking.run(client);
     }, {
         scheduled: true,
-        timezone: "America/Sao_Paulo"
+        timezone: scheduleTimezone
     });
 }
 

@@ -1,7 +1,8 @@
 const file_get_contents = require("./file_get_contents");
-var moment = require('moment-timezone');
+const moment = require('moment-timezone');
 const fs = require('fs').promises;
 const path = require('path').resolve(__dirname, '..')
+const timezone = process.env.QUIZ_DEFAULT_TIMEZONE;
 
 function resolveFilePath(file){
     return path + `/${file}`;
@@ -83,7 +84,7 @@ async function getUser(id, username) {
             max_streak: 0,
             current_streak: 0,
             average_ranking: 'none',
-            created_at: moment().tz("America/Sao_Paulo").format("YYYY-MM-DD HH:mm:ss")
+            created_at: moment().tz(timezone).format("YYYY-MM-DD HH:mm:ss")
         }
 
         users.push(user);
@@ -246,7 +247,7 @@ async function storeUserQuiz(user_id, username, quiz_id, given_answer) {
         const quiz = getQuiz.filter((qz) => qz.id == quiz_id)[0];
 
         const asked_at = moment(quiz.asked_at);
-        const now = moment().tz("America/Sao_Paulo");
+        const now = moment().tz(timezone);
         const velocity = now.diff(asked_at, 'seconds');
         const bonusTimePoints = sumTimeBonus(velocity);
         const points = quiz.points;
@@ -312,7 +313,7 @@ async function getRanking(positions, period = 'month'){
     let user_quizes = fs.readFile(resolveFilePath("extras/quiz/db/user_quizes.json"), 'utf8');
     user_quizes = JSON.parse(await user_quizes);
 
-    const today = moment().tz("America/Sao_Paulo");
+    const today = moment().tz(timezone);
     user_quizes.filter(uq => moment(uq.completed_when).isBetween(moment().startOf(period), today));
 
     let users = fs.readFile(resolveFilePath("extras/quiz/db/users.json"), 'utf8');
