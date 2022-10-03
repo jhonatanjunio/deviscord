@@ -1,6 +1,5 @@
 const moment = require('moment-timezone');
 const fs = require('fs').promises;
-const translator = require('./translator');
 const cron = require('node-cron');
 const { pointsByDifficulty, getQuizQuestions } = require('../../helpers/quizhelper');
 const question = require('./question');
@@ -72,7 +71,6 @@ async function makeQuiz(client, dirName) {
                 }
             }
 
-            const translated_question = await translator(quiz[qz].question);
             const question = `**${translated_question}**\nPergunta em inglês: "${quiz[qz].question}"`;
 
             let newQuiz = {
